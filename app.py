@@ -87,7 +87,7 @@ if input_mode == "📝 Input Manual":
             st.download_button(
                 label="📅 Unduh Hasil sebagai CSV",
                 data=csv_manual,
-                file_name="hasil_prediksi_manual_simpia.csv",
+                file_name="hasil_prediksi_manual_yousician_piano.csv",
                 mime="text/csv"
             )
 
@@ -189,7 +189,7 @@ else:
                 st.download_button(
                     label="📅 Unduh Hasil CSV",
                     data=csv_result,
-                    file_name="hasil_prediksi_simpia.csv",
+                    file_name="hasil_prediksi_yousician_piano.csv",
                     mime="text/csv"
                 )
 
