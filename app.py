@@ -31,7 +31,7 @@ def detect_complaint(text):
     return int(any(kw in text for kw in complaint_keywords))
 
 # === Judul Aplikasi ===
-st.title("🎹 Aplikasi Analisis Sentimen – Yousician: Learn Piano")
+st.title("🎹 Aplikasi Analisis Sentimen – Simpia Learn Piano Fast")
 
 # === Pilih Mode Input ===
 st.header("📌 Pilih Metode Input")
@@ -87,7 +87,7 @@ if input_mode == "📝 Input Manual":
             st.download_button(
                 label="📅 Unduh Hasil sebagai CSV",
                 data=csv_manual,
-                file_name="hasil_prediksi_manual_piano.csv",
+                file_name="hasil_prediksi_manual_simpia.csv",
                 mime="text/csv"
             )
 
@@ -161,7 +161,7 @@ else:
 
                 ax_bar.set_ylabel("Jumlah")
                 ax_bar.set_xlabel("Sentimen")
-                ax_bar.set_title("Distribusi Sentimen Pengguna – Yousician: Learn Piano")
+                ax_bar.set_title("Distribusi Sentimen Pengguna – Simpia Learn Piano Fast")
                 st.pyplot(fig_bar)
 
                 # === Pie Chart ===
@@ -189,7 +189,7 @@ else:
                 st.download_button(
                     label="📅 Unduh Hasil CSV",
                     data=csv_result,
-                    file_name="hasil_prediksi_piano.csv",
+                    file_name="hasil_prediksi_simpia.csv",
                     mime="text/csv"
                 )
 
